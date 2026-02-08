@@ -4,7 +4,7 @@
 %global build_timestamp %(date +"%Y%m%d")
 
 Name:           gamescope
-Version:        ba147
+Version:        test1
 Release:        1.bazzite
 Summary:        Micro-compositor for video games on Wayland
 
@@ -88,7 +88,7 @@ Summary:	libs for %{name}
 %summary
 
 %prep
-git clone %{url}.git --depth 1 --branch %{version} gamescope
+git clone https://github.com/novar/gamescope.git --depth 1 --branch %{version} gamescope
 cd gamescope
 git submodule update --init --recursive
 mkdir -p pkgconfig
